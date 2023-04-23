@@ -1,0 +1,78 @@
+@use 'variables'
+
+@mixin StyledWeight()
+    display: flex
+    flex-direction: column
+    position: relative
+    &::before
+        content: ""
+        background-image: url("/icons/haltere.png")
+        background-size: 30px
+        position: absolute
+        top: 47%
+        left: 10px
+        height: 30px
+        width: 30px
+
+    label
+        color: variables.$light-color
+        font-weight: 900
+        margin: 0 0 2% 1%
+
+    input
+        padding: 0 0 0 50px
+        height: 49px
+        font-size: 18px
+        font-weight: 900
+        outline: none
+        border-radius: 10px
+        border: none
+
+
+
+@mixin StyledHeight()
+    display: flex
+    flex-direction: column
+    position: relative
+    &::before
+        content: ""
+        background-image: url("/icons/altura.png")
+        background-size: 30px
+        position: absolute
+        top: 62%
+        left: 10px
+        height: 30px
+        width: 30px
+
+    label
+        color: variables.$light-color
+        font-weight: 900
+        margin: 7% 0 2% 1%
+
+    input
+        padding: 0 0 0 50px
+        height: 49px
+        font-size: 18px
+        font-weight: 900
+        outline: none
+        border-radius: 10px
+        margin: 1% 0 0 0
+        border: none
+
+@mixin StyledButtons()
+    display: flex
+    justify-content: space-between
+    margin: 10% 0 0 1%
+
+    button
+        width: 150px
+        height: 46px
+        border-radius: 10px
+        color: variables.$secondary-color
+        cursor: pointer
+        font-size: 12pt
+        font-weight: 900
+        transition: .3s ease-in-out
+        border: none
+        &:hover
+            transform: translateY(-5%)

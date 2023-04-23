@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #D9D9D9;
+}
+
+.calculator {
+  display: flex;
+  width: 870px;
+  height: 400px;
+  background-color: #063BF4;
+  border-radius: 20px;
+  margin: 10% 0 0 0;
+}
+.calculator .bmi-form {
+  width: 45%;
+  height: 100%;
+  border-right: 1px solid gray;
+  margin: 0 0 0 3%;
+}
+.calculator .bmi-form .bmi-inputs {
+  margin: 5% 10% 0 0;
+}
+.calculator .bmi-form .bmi-inputs h1 {
+  color: #D9D9D9;
+  font-weight: 900;
+}
+.calculator .bmi-form .bmi-inputs .inputs-calculator {
+  margin: 5% 0 0 0;
+}
+.calculator .bmi-form .bmi-inputs .inputs-calculator .weight {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.calculator .bmi-form .bmi-inputs .inputs-calculator .weight::before {
+  content: "";
+  background-image: url("/icons/haltere.png");
+  background-size: 30px;
+  position: absolute;
+  top: 47%;
+  left: 10px;
+  height: 30px;
+  width: 30px;
+}
+.calculator .bmi-form .bmi-inputs .inputs-calculator .weight label {
+  color: #D9D9D9;
+  font-weight: 900;
+  margin: 0 0 2% 1%;
+}
+.calculator .bmi-form .bmi-inputs .inputs-calculator .weight input {
+  padding: 0 0 0 50px;
+  height: 49px;
+  font-size: 18px;
+  font-weight: 900;
+  outline: none;
+  border-radius: 10px;
+  border: none;
+}
+.calculator .bmi-form .bmi-inputs .inputs-calculator .height {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.calculator .bmi-form .bmi-inputs .inputs-calculator .height::before {
+  content: "";
+  background-image: url("/icons/altura.png");
+  background-size: 30px;
+  position: absolute;
+  top: 62%;
+  left: 10px;
+  height: 30px;
+  width: 30px;
+}
+.calculator .bmi-form .bmi-inputs .inputs-calculator .height label {
+  color: #D9D9D9;
+  font-weight: 900;
+  margin: 7% 0 2% 1%;
+}
+.calculator .bmi-form .bmi-inputs .inputs-calculator .height input {
+  padding: 0 0 0 50px;
+  height: 49px;
+  font-size: 18px;
+  font-weight: 900;
+  outline: none;
+  border-radius: 10px;
+  margin: 1% 0 0 0;
+  border: none;
+}
+.calculator .bmi-form .bmi-inputs .inputs-calculator .group-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 10% 0 0 1%;
+}
+.calculator .bmi-form .bmi-inputs .inputs-calculator .group-buttons button {
+  width: 150px;
+  height: 46px;
+  border-radius: 10px;
+  color: #063BF4;
+  cursor: pointer;
+  font-size: 12pt;
+  font-weight: 900;
+  transition: 0.3s ease-in-out;
+  border: none;
+}
+.calculator .bmi-form .bmi-inputs .inputs-calculator .group-buttons button:hover {
+  transform: translateY(-5%);
+}
+.calculator .display {
+  width: 45%;
+  margin: 2% 0 0 0;
+}
+.calculator .display .result {
+  width: 362px;
+  height: 61px;
+  background-color: white;
+  border-radius: 15px;
+  margin: 42px 0 0 27px;
+  font-size: 16pt;
+  font-weight: 900;
+  text-align: end;
+  padding: 20px 20px 0 0;
+}
+.calculator .display .status {
+  display: flex;
+  flex-direction: column;
+}
+.calculator .display .status div {
+  display: flex;
+}
+.calculator .display .status div .box {
+  width: 163px;
+  height: 46px;
+  background-color: white;
+  border-radius: 15px;
+  margin: 25px 0 0 30px;
+}
+.calculator .display .status div .box div {
+  border-right: 1px solid gray;
+}
+.calculator .display .status div .box div img {
+  width: 30px;
+  height: 30px;
+  margin: 8px 10px 0 12px;
+}
+.calculator .display .status div .box p {
+  font-size: 11pt;
+  font-weight: 900;
+  margin: 8% 0 0 10%;
+  color: #063BF4;
+}/*# sourceMappingURL=style.css.map */

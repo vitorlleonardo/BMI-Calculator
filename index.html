@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="./sass/style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="bmi-form">
+            <div class="bmi-inputs">
+                <h1>BMI Calculator</h1>
+                <div class="inputs-calculator">
+                    <div class="weight">
+                        <label for="">Weight (ex: 65.5) *</label>
+                        <input type="number" id="weight">
+                    </div>
+                    <div class="height">
+                        <label for="">Height (ex: 1.70) *</label>
+                        <input type="number" name="" id="height" placeholder="Inclua ' . ' ">
+                    </div>
+                    <div class="group-buttons">
+                        <button onclick="btnClear()">CLEAR</button>
+                        <button onclick="btnCalcular()">CALCULATE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="display">
+
+            <div class="result">
+            </div>
+            <div class="status">
+                <div>
+                    <div class="box">
+                        <div><img src="./icons/atencao.png" alt=""></div>
+                        <p> < 18,5</p>
+                    </div>
+    
+                    <div class="box">
+                        <div><img src="./icons/saudavel.png" alt=""></div>
+                        <p>18,5 - 24,9</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="box">
+                        <div><img src="./icons/aviso.png" alt=""></div>
+                        <p>25 - 29,9</p>
+                    </div>
+    
+                    <div class="box">
+                        <div><img src="./icons/alta-prioridade.png" alt=""></div>
+                        <p>30 - 34,9</p>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="box">
+                        <div><img src="./icons/alarme.png" alt=""></div>
+                        <p>35,5 - 39,9</p>
+                    </div>
+    
+                    <div class="box">
+                        <div><img src="./icons/grave.png" alt=""></div>
+                        <p> > 40</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/app.js"></script>
+</body>
+</html>

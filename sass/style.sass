@@ -1,0 +1,89 @@
+@use 'variables'
+@use 'mixins'
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: variables.$primay-font
+
+body
+    display: flex
+    justify-content: center
+    background-color: variables.$light-color
+
+.calculator
+    display: flex
+    width: 870px
+    height: 400px
+    background-color: variables.$secondary-color
+    border-radius: 20px
+    margin: 10% 0 0 0
+
+    .bmi-form
+        width: 45%
+        height: 100%
+        border-right: 1px solid gray
+        margin: 0 0 0 3%
+
+        .bmi-inputs
+            margin: 5% 10% 0 0
+
+            h1
+                color: variables.$light-color
+                font-weight: 900
+
+            .inputs-calculator
+                margin: 5% 0 0 0
+                .weight
+                    @include mixins.StyledWeight()
+                
+                .height
+                    @include mixins.StyledHeight()
+
+                .group-buttons
+                    @include mixins.StyledButtons()
+
+    .display
+        width: 45%
+        margin: 2% 0 0 0
+
+        .result
+            width: 362px
+            height: 61px
+            background-color: white
+            border-radius: 15px
+            margin: 42px 0 0 27px
+            font-size: 16pt
+            font-weight: 900
+            text-align: end
+            padding: 20px 20px 0 0
+
+        .status
+            display: flex
+            flex-direction: column
+
+            div
+                display: flex
+                
+
+                .box
+                    width: 163px
+                    height: 46px
+                    background-color: white
+                    border-radius: 15px
+                    margin: 25px 0 0 30px
+                    
+                    div
+                        border-right: 1px solid gray
+
+                        img
+                            width: 30px
+                            height: 30px
+                            margin: 8px 10px 0 12px
+
+                    p
+                        font-size: 11pt
+                        font-weight: 900
+                        margin: 8% 0 0 10%       
+                        color: variables.$secondary-color 
