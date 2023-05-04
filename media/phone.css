@@ -1,0 +1,40 @@
+@media screen and (max-width: 400px) {
+    body {
+        display: flex;
+        justify-content: center;
+    }
+    .calculator {
+        display: flex;
+        flex-direction: column;
+        width: 95vw;
+        height: 85vh;
+    }
+
+    .calculator .bmi-form {
+        width: 95%;
+        order: 1;
+    }
+
+    .calculator .bmi-form .bmi-inputs .inputs-calculator .group-buttons button {
+        width: 8rem;
+    }
+
+    .calculator .display {
+        width: 95%;
+    }
+
+    .calculator .display .result {
+        width: 95%;
+        margin: 10px 0 0 10px;
+    }
+
+    .calculator .display .status {
+        margin: 10px 0 0 0;
+    }
+
+    .calculator .display .status div .box {
+        margin: 15px 0 0 10px;
+    }
+
+    
+}
