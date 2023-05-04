@@ -1,8 +1,9 @@
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
     body {
         display: flex;
         justify-content: center;
     }
+
     .calculator {
         display: flex;
         flex-direction: column;
